@@ -4,7 +4,77 @@ block content
 
     section.main__content
 
-        h1.title.title_h1 My Start Template!
+        h1.main__title 
+            |Отчёт
+            br
+            |по простоям
+
+        .interval 
+
+            .interval__item 
+
+                .interval__item-date 17.12.2020
+
+                .interval__item-time 02:48:31
+
+            .interval__item 
+
+                .interval__item-date 17.12.2020
+
+                .interval__item-time 02:48:31
+
+        .operator 
+
+            .operator__title Оператор
+
+            .operator__name Ермолин Сергей Сергеевич
+
+        table.table 
+
+            thead.table__head 
+
+                tr.table__row
+
+                    th.table__cell Материал
+
+                    th.table__cell Объем
+
+                    th.table__cell Количество
+
+            tbody.table__body 
+
+                tr.table__row
+
+                    td.table__cell Доски 
+
+                    td.table__cell 344 м
+                        sup 3
+
+                    td.table__cell 344 шт
+
+                tr.table__row
+
+                    td.table__cell Доски 
+
+                    td.table__cell 344 м
+                        sup 3
+
+                    td.table__cell 344 шт
+
+        .total 
+
+            .total__row 
+
+                .total__text Длительность простоя
+
+                .total__text.total__text_bold 1 г. 1 м. 23 д. 23:45:57
+
+            .total__row 
+
+                .total__text Суммарный процент выхода
+
+                .total__text.total__text_bold 68%
+        
     
 //- block append scripts
 //- script(src='./js/another-js.js')

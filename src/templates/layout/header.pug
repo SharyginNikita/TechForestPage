@@ -4,9 +4,6 @@ header.header
 
         nav.header-nav
 
-            +menuList([
-                    {title: "It's", href: "https://github.com/SharyginNikita", extraClass: 'active'},
-                    {title: "My", href: "https://github.com/SharyginNikita"},
-                    {title: "Start", href: "https://github.com/SharyginNikita"},
-                    {title: "Template", href: "https://github.com/SharyginNikita"},
-                ], 0, 'menu')
+            a(href="#").header__logo
+
+                img(src="/images/logo.svg" width="100%").header__logo-image

@@ -1,6 +1,6 @@
 const { src, dest, watch, series, parallel } = require("gulp");
 const webpack = require("webpack-stream");
-const Fiber = require("fibers");
+
 
 const pug = require("gulp-pug");
 const prettify = require("gulp-jsbeautifier");
@@ -62,7 +62,7 @@ function buildScss() {
             })
         )
         .pipe(gulpif(mode === "development", sourcemaps.init()))
-        .pipe(sass({ fiber: Fiber }).on("error", sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(
             autoprefixer({
                 grid: true

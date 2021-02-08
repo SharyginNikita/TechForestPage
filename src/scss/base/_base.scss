@@ -7,13 +7,29 @@
 }
 
 .body {
+    position: relative;
+
     display: flex;
     flex-direction: column;
 
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 80px;
 
     font-family: global.$font-default;
+    font-weight: 400;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        width: 466px;
+        height: 554px;
+
+        background: url('/images/Shape-circle.svg') no-repeat center/contain;
+    }
 }
 
 a {

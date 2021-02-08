@@ -1,5 +1,9 @@
 @use '../utils/vars' as global;
 
+.html {
+    background-color: #fff;
+}
+
 .main {
     display: flex;
 
@@ -15,6 +19,26 @@
         
         width: 100%;
         max-width: global.$width-container;
+    }
+
+    &__title {
+        position: relative;
+
+        margin: 0 0 110px;
+
+        font: 700 100px global.$font-default;
+
+        &:before {
+            position: absolute;
+            content: '';
+
+            left: -45px;
+
+            width: 40px;
+            height: 100%;
+
+            background-color: #008c00;
+        }
     }
 }
 
