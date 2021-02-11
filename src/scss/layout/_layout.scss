@@ -19,6 +19,10 @@
         
         width: 100%;
         max-width: global.$width-container;
+
+        @media (orientation: landscape) {
+           max-width: 1800px;
+          }
     }
 
     &__title {
